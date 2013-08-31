@@ -230,7 +230,8 @@ my $attrs = multiLineList("  ", removeDups @attrs);
 my $requires = multiLineList("    ", removeDups @requires);
 
 print <<EOF ;
-# This file contains basic hardware configuration, detected through nixos-hardware-scan
+# This file contains basic hardware configuration, detected 
+# through nixos-hardware-scan at initial NixOS installation time.
 { config, pkgs, ... }:
 
 {
