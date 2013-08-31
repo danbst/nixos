@@ -229,10 +229,8 @@ my $modulePackages = toNixExpr(removeDups @modulePackages);
 my $attrs = multiLineList("  ", removeDups @attrs);
 my $requires = multiLineList("    ", removeDups @requires);
 
-
 print <<EOF ;
-# This is a generated file.  Do not modify!
-# Make changes to /etc/nixos/configuration.nix instead.
+# This file contains basic hardware configuration, detected through nixos-hardware-scan
 { config, pkgs, ... }:
 
 {
